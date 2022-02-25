@@ -1,0 +1,57 @@
+.cover {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(5, 5, 5, 0.507);
+    z-index: 9999999;
+}
+
+.msg {
+    position: absolute;
+    width: 50%;
+    margin: 150px 25%;
+    min-height: 300px;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(251, 251, 251);
+    box-shadow: 5px 5px 5px #0000009a;
+    z-index: 9999;
+}
+
+.cabecera {
+    color: #000000;
+    background-color: #f6f6f6;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+.title {
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.suceso {
+    color: #52BE80;
+}
+
+.mensaje {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 1.2em;
+    color: black;
+}
+
+.error {
+    color: tomato;
+}
+
+.informacion {
+    color: #ff7000;
+}

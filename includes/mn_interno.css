@@ -1,0 +1,65 @@
+/* ----------------------------------------------------- estilos del menú interno ------------------------------------------- */
+
+nav {
+    background-color: #dddddd;
+    border-radius: 10px;
+}
+
+nav ul {
+    /* se aplica a todos los ul que esten dentro de un nav*/
+    list-style: none;
+    /* 1. quita las viñetas*/
+    padding: 0;
+    /* 2. quita el relleno*/
+    margin: 0;
+    /* 2. quita las margenes*/
+}
+
+nav a {
+    /* se aplica a todos los a que esten dentro de un nav*/
+    background-color: #dddddd;
+    /* 4. colocamos color de fondo*/
+    color: #191C26;
+    /* 5. colocamos color a la letra*/
+    text-decoration: none;
+    /* 6. quitamos el subrayado*/
+    padding: 1em;
+    /* 7. colocamos el relleno la unidad em se refiere al tamaño de la fuente 2 em significa 2 veces el tamaño de la letra*/
+    display: block;
+    /* 8. Muestra un elemento (como <p>). Comienza en una nueva línea, y ocupa todo el ancho.*/
+}
+
+nav a:hover {
+    /* se aplica cuando pasamos el mouse por el elemento a*/
+    color: steelblue;
+    /*10. cambiamos el color a la letra*/
+}
+
+nav ul li ul {
+    /* se aplica a los ul que estan dentro de un li que está dentro de un ul que está dentro de un nav*/
+    display: none;
+    /* 11. ocultamos el submenu*/
+}
+
+nav ul li a:hover+ul,
+nav ul li ul:hover {
+    /* se aplica a los ul del sub menú cuando coloco el mouse sobre un a y a los ul del submenu cuando coloco el mouse
+sobre ellos*/
+    display: block;
+    /* 12. Mostramos el submenú hace el ul se muestre como un p Comienza en una nueva línea, y ocupa
+todo el ancho.*/
+    margin: 0em;
+    /* 2. quita las margenes*/
+    background-color: #eaaeee;
+}
+
+@media screen and (max-width: 850px) {
+    .col-s-12 {
+        width: 100%;
+    }
+    nav ul {
+        position: relative;
+        top: 0px;
+        display: block;
+    }
+}

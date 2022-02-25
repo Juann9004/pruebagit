@@ -1,0 +1,24 @@
+/* ------------------------------------------------------ estilos del acordeón ------------------------------------------------ */
+.acordeon{
+    background: #eeeeee;
+    }
+    .acordeon a{
+    text-decoration:none; /* quitamos el subrayado*/
+    display:block;
+    background:#dddddd;
+    line-height:2.5;
+    padding:0 1em;
+    color:steelblue;
+    font-weight:bold;
+    border-bottom:1px solid #ccc;
+    }
+    .acordeon p{
+    padding:1em; /* colocamos el relleno la unidad em se refiere al tamaño de la fuente 1 em significa vez el tamaño de
+    la letra*/
+    margin:0; /* quita las margenes*/
+    display:none; /* ocultamos el parrafo*/
+    }
+    .acordeon p:target{
+    display:block; 
+    }
+    /* Muestra un elemento (como <p>). Comienza en una nueva línea, y ocupa todo el ancho.*/
